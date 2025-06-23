@@ -1,0 +1,10 @@
+name: Workflow, der einen anderen verwendet
+ 
+on:
+  push:
+ 
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/workflows/reusable.yaml
+    with:
+      name: "Mehdi"
