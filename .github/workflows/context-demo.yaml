@@ -18,7 +18,7 @@ jobs:
              uses: actions/checkout@v4
  
            - name: Zeige GitHub Kontext
-             run: echo ${{ toJSON(github) }}
+             run: echo '${{ toJSON(github) }}'
  
            - name: Commit Message lesen
              id: get_commit_message
