@@ -1,0 +1,17 @@
+#workflow configuration
+name: Hello World
+
+
+#Events
+on:
+   workflow_dispatch:
+      
+
+#Jobs 
+jobs:
+    hello_world:
+        runs-on: ubuntu-latest
+        steps:
+          -  run: echo "Hello, World!"
+            
+   
