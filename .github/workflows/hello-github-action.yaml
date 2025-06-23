@@ -7,11 +7,14 @@ on:
    workflow_dispatch:
       
 
-#Jobs 
 jobs:
     hello_world:
         runs-on: ubuntu-latest
         steps:
-          -  run: echo "Hello, World!"
-            
+          -  name: checkout files 
+             run: pwd && ls -al
+          - uses: actions/checkout@v4.2.2
+          - run: pwd && ls -al
+          - run: node index.js
+          
    
